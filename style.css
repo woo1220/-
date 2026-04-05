@@ -1,0 +1,153 @@
+/* 전체 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* 🔥 HERO */
+.hero {
+    height: 100vh;
+    background: url('images/1.png') center/cover no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+
+/* 어두운 오버레이 */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index : 1;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+
+/* 🔵 키워드 섹션 */
+.keywords {
+    background: #f4f7f6;
+    padding: 100px 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 각 칸 */
+.keyword-box {
+    text-align: center;
+}
+
+/* 원 */
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background: #d8e5e3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+}
+
+
+/* 📖 ABOUT */
+.about {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ✨ CONCEPT */
+.concept {
+    background: #e8f0ef;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+
+/* 🖼️ 이미지 */
+.gallery {
+    display: flex;
+    gap: 20px;
+    padding: 100px 20px;
+    margin-top: 150px ;
+}
+
+.img-box {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+.logo-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.logo-section h2 {
+    margin-bottom: 20px;
+}
+
+.logo-wrap {
+    margin: 40px 0;
+}
+
+.logo-wrap img {
+    width: 300px;
+    height: auto;
+}
+
+
